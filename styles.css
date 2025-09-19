@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif  ;  
+   }
+   body {
+    background-color: navy;
+   }
+   header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 2rem auto;
+       max-width: 1200px;
+ 
+    }
+
+
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+ 
+    gap: 2rem;
+}
+
+
+.navigation a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+
+.navigation a:hover{
+    color: #000000;
+}
+
+
+hr{
+    opacity: 10%;
+}
+.hero{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+.arrwo{
+    position: absolute;
+    transform: translatex(-5.5rem) translatey(1.5rem);
+}
+.herosub{
+    display: flex;
+    flex-direction: column ;
+    gap: 0.5rem;
+}
+.naeme {
+font-size: 3rem;
+color: aqua;
+}
+.title{
+    font-size: 3.5rem;
+    color: rgb(83, 101, 255);
+
+}
+.heroBtns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.hireMe {
+background-color: rgb(29, 165, 63);
+color: rgb(230, 230, 230);
+border-radius: 24px;
+text-decoration: none;
+padding: 0.5rem 1.5rem ;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.856) ;
+}
+
+
+.apoutMe{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    gap: 10rem;
+
+
+}
+
+.textcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.taxtTitli{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+.apoutName{
+    color: rgb(219, 219, 219);
+}
+.apoutTitli{
+    color: aqua;
+}
+.apoutMepar{
+    text-align: justify;
+    color: rgb(145, 112, 236);
+}
+.works{
+    background-image: url("assets/svg/background.svg");
+    padding: 10rem 10rem;
+    margin: 5rem 0rem;
+}
+.worksContainer{
+    display: flex;
+    justify-content:space-around ;
+    align-items: left;
+    margin: 5rem auto;
+    max-width: 1200px;   
+}
+.projectTitle{
+      display: flex;
+      align-items: center;
+     justify-content:left ;
+     gap: 5px;
+     font-size: 2rem;
+}
+.works ul {
+      display: flex;
+      list-style-type: none;
+        align-items: center;
+        justify-content:space-around ;
+}
+.works li{
+    border-radius: 16px;
+    background-color: rgb(150, 25, 233);
+    backdrop-filter: blur(4px);
+    padding: 1rem 4rem;
+}
+.works li img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+.works li :hover{
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.contactTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+  gap: 20rem;
+}
+
+.contact h3, .contact a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.emailAndPhone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+}
+.socialMedia img {
+  width: 24px;
+  height: 24px;
+}
+
+
+footer {
+  color: #eeeeee;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+@media (max-width: 1023px) {
+  header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .heroImg {
+    width: 400px;
+  }
+  .name, .title {
+    font-size: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
+  .aboutMe {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .textContainer {
+    align-items: center;
+    margin: 0rem 5rem;
+    gap: 1rem;
+  }
+  .aboutName, .aboutTitle {
+    font-size: 2rem;
+  }
+  .light {
+    width: 60px;
+  }
+  .aboutMeImg {
+    width: 400px;
+  }
+  .works {
+    padding: 0;
+  }
+  .worksContainer {
+    padding: 5rem 0rem;
+    gap: 3rem;
+  }
+  .projectTitle {
+    margin-left: 1rem;
+  }
+  .works ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contactContainer {
+    margin: 10rem 5rem;
+    gap: 2rem;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+
+}
